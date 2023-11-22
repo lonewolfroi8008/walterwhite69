@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "walterwhite69_backend": {
+      "main": "src/walterwhite69_backend/main.mo",
+      "type": "motoko"
+    },
+    "walterwhite69_frontend": {
+      "dependencies": [
+        "walterwhite69_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/walterwhite69_frontend/src/index.html"
+      },
+      "source": [
+        "src/walterwhite69_frontend/assets",
+        "dist/walterwhite69_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
